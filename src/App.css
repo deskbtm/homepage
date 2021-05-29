@@ -1,0 +1,59 @@
+/* html,
+body {
+  margin: 0;
+  padding: 0;
+} */
+
+.app {
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+header .app-logo {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+.slogan {
+  margin-top: 30px;
+  font-size: 60px;
+}
+
+@media screen and (max-width: 762px) {
+  .slogan {
+    font-size: 50px;
+  }
+}
+
+.subtitle {
+  font-size: 30;
+  font-weight: bold;
+  color: rgb(95, 95, 95);
+}
+
+.align-enter {
+  display: flex;
+  align-items: center;
+}
+
+.content-enter {
+  display: flex;
+  justify-content: center;
+}
+
+.bg-effect {
+  transition: background 500ms ease;
+}
+
+.bg-effect:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.projects-list {
+  display: flex;
+  justify-content: center;
+}
