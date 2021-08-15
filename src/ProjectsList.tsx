@@ -5,10 +5,10 @@ import { Occupy } from "./components/Occupy";
 
 const projectsList = [
   {
-    icon: "carla-logo.svg",
-    name: "Carla",
-    desc: "Carla是一个强大的跨平台 javascript 脚本插件应用环境",
-    url: "https://carlajs.deskbtm.com/",
+    icon: "nawb-logo.svg",
+    name: "nawb",
+    desc: "Nawb是一个强大的跨平台 javascript 脚本插件应用环境",
+    url: "https://nawb.deskbtm.com/",
   },
   {
     icon: "aqua-logo.svg",
@@ -22,7 +22,7 @@ const freeProjectsList = [
   {
     name: "Lonely",
     desc: "独立开发者的软件管理工具 支付无需签约，高效管理用户",
-    url: "https://carlajs.deskbtm.com/more/lonely-mgmt/start",
+    url: "https://nawb.deskbtm.com/more/lonely-mgmt/start",
   },
   {
     name: "win-win-api",
