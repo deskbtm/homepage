@@ -2,39 +2,9 @@ import React, { CSSProperties, FC, MouseEventHandler } from "react";
 import { Scrollbars } from "rc-scrollbars";
 import "./ProjectsList.css";
 import { Occupy } from "./components/Occupy";
-
-const projectsList = [
-  {
-    icon: "nawb-logo.svg",
-    name: "nawb",
-    desc: "Nawb是一个强大的跨平台 javascript 脚本插件应用环境",
-    url: "https://nawb.deskbtm.com/",
-  },
-  {
-    icon: "aqua-logo.svg",
-    name: "Aqua",
-    desc: "使用Flutter开发的一款优雅至极的文件管理器",
-    url: "https://github.com/deskbtm/aqua",
-  },
-];
-
-const freeProjectsList = [
-  {
-    name: "Lonely",
-    desc: "独立开发者的软件管理工具 支付无需签约，高效管理用户",
-    url: "https://nawb.deskbtm.com/more/lonely-mgmt/start",
-  },
-  {
-    name: "win-win-api",
-    desc: "使用ffi实现的js对win32 api的绑定",
-    url: "https://github.com/sewerganger/win-win-api",
-  },
-  {
-    name: "android-adb-wlan",
-    desc: "vscode插件, 安卓无线调试, 支持多台设备",
-    url: "https://github.com/sewerganger/android-adb-wlan",
-  },
-];
+import { products } from "./products";
+import { useTranslation } from "react-i18next";
+import { useMediaQueries } from "@react-hook/media-query";
 
 interface ProjectsListTileProps {
   leading?: string;
@@ -42,6 +12,7 @@ interface ProjectsListTileProps {
   subTitle?: string;
   onClick?: MouseEventHandler;
   style?: CSSProperties;
+  actions?: { title: string; href: string }[];
 }
 
 export const ProjectsListTile: FC<ProjectsListTileProps> = function (props) {
@@ -57,7 +28,24 @@ export const ProjectsListTile: FC<ProjectsListTileProps> = function (props) {
         </div>
       )}
       <div className="listTile-wrapper">
-        <div className="listTile-title">{props.title}</div>
+        <div className="header">
+          <div className="listTile-title">{props.title}</div>
+          {props.actions?.map((val, index) => {
+            return (
+              <div className="action" key={String(index)}>
+                <a
+                  href={val.href}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.open(val.href);
+                  }}
+                >
+                  {val.title}
+                </a>
+              </div>
+            );
+          })}
+        </div>
         <div className="listTile-subTitle">{props.subTitle}</div>
       </div>
     </div>
@@ -69,45 +57,62 @@ export const ProjectsListTitle: FC = function (props) {
 };
 
 export const ProjectsList: FC = function () {
+  const { t } = useTranslation();
+  const { matchesAll } = useMediaQueries({
+    screen: "screen",
+    width: "(max-width: 762px)",
+  });
+
+  const appList = products.app.map((item, index) => {
+    return (
+      <ProjectsListTile
+        key={String(index)}
+        leading={item.icon}
+        title={item.name}
+        subTitle={t(item.descId)}
+        onClick={() => {
+          window.open(item.href);
+        }}
+      />
+    );
+  });
+
+  const openSourceList = products.openSource.map((item, index) => {
+    return (
+      <ProjectsListTile
+        key={String(index)}
+        leading={item.icon}
+        title={item.name}
+        subTitle={t(item.descId)}
+        onClick={() => {
+          window.open(item.href);
+        }}
+      />
+    );
+  });
+
+  const style = { width: 500, height: 500 };
+
   return (
     <div className="project-container">
       <div>
-        <ProjectsListTitle>应用软件</ProjectsListTitle>
-        {projectsList.map((item, index) => {
-          return (
-            <ProjectsListTile
-              key={String(index)}
-              leading={item.icon}
-              title={item.name}
-              subTitle={item.desc}
-              onClick={() => {
-                window.open(item.url);
-              }}
-            />
-          );
-        })}
+        <ProjectsListTitle>{t("Apps")}</ProjectsListTitle>
+        {matchesAll ? (
+          appList
+        ) : (
+          <Scrollbars style={{ width: 500, height: 500 }}>{appList}</Scrollbars>
+        )}
       </div>
       <Occupy width={20} />
       <div>
-        <ProjectsListTitle>开源免费工具</ProjectsListTitle>
-        <Scrollbars
-          className="open-source-list"
-          style={{ width: 400, height: 500 }}
-          autoHide
-        >
-          {freeProjectsList.map((item, index) => {
-            return (
-              <ProjectsListTile
-                key={String(index)}
-                title={item.name}
-                subTitle={item.desc}
-                onClick={() => {
-                  window.open(item.url);
-                }}
-              />
-            );
-          })}
-        </Scrollbars>
+        <ProjectsListTitle>{t("OpenSource")}</ProjectsListTitle>
+        {matchesAll ? (
+          openSourceList
+        ) : (
+          <Scrollbars style={{ width: 500, height: 500 }}>
+            {openSourceList}
+          </Scrollbars>
+        )}
       </div>
     </div>
   );

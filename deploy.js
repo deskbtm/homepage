@@ -1,47 +1,31 @@
-// var ghpages = require("gh-pages");
+var ghpages = require("gh-pages");
 var { exec } = require("child_process");
 var ora = require("ora");
-const { Client } = require("node-scp");
 const fs = require("fs");
-const path = require("path");
-const os = require("os");
 const { copyFile, readdir } = fs.promises;
 
 async function publish() {
-  const client = await Client({
-    host: "47.116.67.236",
-    port: 22,
-    username: "root",
-    privateKey: fs.readFileSync(path.resolve(os.homedir(), ".ssh/id_rsa")),
+  return new Promise((resolve, reject) => {
+    ghpages.publish(
+      "./dist/static",
+      {
+        branch: "master",
+        repo: "https://github.com/Nawbc/deskbtm-homepage.git",
+        message: "Auto-generated commit",
+        user: {
+          name: "Nawbc",
+          email: "wanghan9423@outlook.com",
+        },
+      },
+      (err) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve();
+        }
+      }
+    );
   });
-
-  return client
-    .uploadDir("./dist/static", "/root/deskbtm-homepage")
-    .then(() => {
-      client.close();
-    });
-
-  // return new Promise((resolve, reject) => {
-  //   ghpages.publish(
-  //     "./dist/static",
-  //     {
-  //       branch: "master",
-  //       repo: "https://github.com/sewerganger/deskbtm-homepage.git",
-  //       message: "Auto-generated commit",
-  //       user: {
-  //         name: "sewerganger",
-  //         email: "wanghan9423@outlook.com",
-  //       },
-  //     },
-  //     (err) => {
-  //       if (err) {
-  //         reject(err);
-  //       } else {
-  //         resolve();
-  //       }
-  //     }
-  //   );
-  // });
 }
 
 async function buildHomepage() {

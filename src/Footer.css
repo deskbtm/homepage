@@ -1,5 +1,9 @@
 .app-footer {
   height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-github-link:hover {

@@ -8,6 +8,22 @@ body {
   padding: 20px;
 }
 
+.navbar select {
+  float: right;
+  border: none;
+  outline: unset;
+  background-color: unset;
+}
+
+.navbar select option {
+  border: none;
+  background-color: unset;
+}
+
+.navbar select:after {
+  clear: both;
+}
+
 header {
   text-align: center;
 }
@@ -56,4 +72,9 @@ header .app-logo {
 .projects-list {
   display: flex;
   justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 84, 180);
 }
