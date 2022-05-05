@@ -16,10 +16,10 @@ export const enUS = {
   },
   openSource: {
     colorfulMonorepo: {
-      desc: "A vscode ext. make the Monorepo project workbench more efficient and refreshing",
+      desc: "A vscode extension. Make the Monorepo project workbench more efficient and refreshing",
     },
     androidADBWLAN: {
-      desc: "A vscode ext. Android wireless debugging, support multiple devices.",
+      desc: "A vscode extension. Android wireless debugging, support multiple devices.",
     },
     win32ffi: {
       desc: "Win32 api binding for js/ts by node-ffi.",

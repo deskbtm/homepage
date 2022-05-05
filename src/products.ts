@@ -8,7 +8,7 @@ export const products = {
     },
     {
       icon: "letscollab.svg",
-      name: "letscollab",
+      name: "letscollab (WIP 🚧)",
       descId: "app.letscollab.desc",
       href: "https://letscollab.deskbtm.com/",
     },
