@@ -33,10 +33,6 @@ i18n
 const App = function () {
   const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    // i18n.changeLanguage
-  });
-
   return (
     <div className="app">
       <div className="navbar">

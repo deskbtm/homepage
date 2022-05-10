@@ -84,6 +84,7 @@ export const ProjectsList: FC = function () {
         leading={item.icon}
         title={item.name}
         subTitle={t(item.descId)}
+        actions={item.actions}
         onClick={() => {
           window.open(item.href);
         }}

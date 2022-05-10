@@ -33,7 +33,7 @@ export const products = {
       icon: "android.png",
       actions: [
         {
-          title: "market",
+          title: "Marketplace",
           href: "https://marketplace.visualstudio.com/items?itemName=HanWang.android-adb-wlan",
         },
       ],
