@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import { Occupy } from "./components/Occupy";
 import { Footer } from "./Footer";
@@ -14,7 +14,7 @@ i18n
   .use(LanguageDetector)
   .init({
     resources: {
-      "en-US": {
+      "en": {
         translation: enUS,
       },
       "zh-CN": {
@@ -45,7 +45,7 @@ const App = function () {
           }}
         >
           <option value="zh-CN">简体中文</option>
-          <option value="en-US">English</option>
+          <option value="en">English</option>
         </select>
       </div>
       <Occupy height={30} />

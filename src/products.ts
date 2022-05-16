@@ -25,6 +25,12 @@ export const products = {
       descId: "openSource.colorfulMonorepo.desc",
       href: "https://github.com/deskbtm/colorful-monorepo",
       icon: "monorepo.png",
+      actions: [
+        {
+          title: "Coming Soon",
+          href: "#",
+        },
+      ],
     },
     {
       name: "Android adb wlan",

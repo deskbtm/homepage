@@ -41,5 +41,14 @@
     "mutex": "cpp"
   },
   "liveServer.settings.multiRootWorkspaceName": "deskbtm-homepage",
-  "ColorfulMonorepo.drawer.init": true
+  "ColorfulMonorepo.drawer.init": true,
+  "ColorfulMonorepo.workspaces.collection": [
+    {
+      "path": "/home/nawbc/Workspace/deskbtm-homepage-legacy",
+      "packageName": "my-vue-app",
+      "label": "🌱  my-vue-app",
+      "foreground": "#ffffff",
+      "background": "#f332c7"
+    }
+  ]
 }
