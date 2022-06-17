@@ -14,7 +14,7 @@ i18n
   .use(LanguageDetector)
   .init({
     resources: {
-      "en": {
+      en: {
         translation: enUS,
       },
       "zh-CN": {
@@ -44,8 +44,8 @@ const App = function () {
             await i18n.changeLanguage(lng);
           }}
         >
-          <option value="zh-CN">简体中文</option>
-          <option value="en">English</option>
+          <option value="zh-CN">English</option>
+          <option value="en">简体中文</option>
         </select>
       </div>
       <Occupy height={30} />
@@ -54,7 +54,7 @@ const App = function () {
           <img src="logo.svg" alt="logo" />
         </div>
         <div className="slogan">{t("No inspiration is spared.")}</div>
-        <p className="sub-slogan">{t("An amateur independent studio")}</p>
+        <p className="sub-slogan">{t("An amateur indie studio")}</p>
       </header>
       <Occupy height={70} />
       <main>

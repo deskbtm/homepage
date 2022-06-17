@@ -1,6 +1,6 @@
+import "./ProjectsList.css";
 import React, { CSSProperties, FC, MouseEventHandler } from "react";
 import { Scrollbars } from "rc-scrollbars";
-import "./ProjectsList.css";
 import { Occupy } from "./components/Occupy";
 import { products } from "./products";
 import { useTranslation } from "react-i18next";
@@ -91,8 +91,6 @@ export const ProjectsList: FC = function () {
       />
     );
   });
-
-  const style = { width: 500, height: 500 };
 
   return (
     <div className="project-container">

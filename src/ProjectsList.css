@@ -30,6 +30,7 @@
 
 .listTile-wrapper .header .action {
   margin-left: 30px;
+  white-space: nowrap;
 }
 
 .listTile-title {

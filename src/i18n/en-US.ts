@@ -1,6 +1,6 @@
 export const enUS = {
   "No inspiration is spared.": "No inspiration is spared.",
-  "An amateur independent studio": "An amateur independent studio",
+  "An amateur indie studio": "An amateur indie studio",
   Apps: "Apps",
   OpenSource: "Open Source",
   app: {

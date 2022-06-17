@@ -1,6 +1,6 @@
 export const zhCN = {
   "No inspiration is spared.": "不放过任何灵感",
-  "An amateur independent studio": "一个业余软件工作室",
+  "An amateur indie studio": "一个业余软件工作室",
   Apps: "应用产品",
   OpenSource: "开源软件",
   app: {
