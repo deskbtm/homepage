@@ -94,24 +94,26 @@ export const ProjectsList: FC = function () {
 
   return (
     <div className="project-container">
-      <div>
+      <div style={{width: 500}}>
         <ProjectsListTitle>{t("Apps")}</ProjectsListTitle>
-        {matchesAll ? (
+        {appList}
+        {/* {matchesAll ? (
           appList
         ) : (
           <Scrollbars style={{ width: 500, height: 500 }}>{appList}</Scrollbars>
-        )}
+        )} */}
       </div>
       <Occupy width={20} />
-      <div>
+      <div style={{width: 500}}>
         <ProjectsListTitle>{t("OpenSource")}</ProjectsListTitle>
-        {matchesAll ? (
+        {openSourceList}
+        {/* {matchesAll ? (
           openSourceList
         ) : (
           <Scrollbars style={{ width: 500, height: 500 }}>
             {openSourceList}
           </Scrollbars>
-        )}
+        )} */}
       </div>
     </div>
   );
