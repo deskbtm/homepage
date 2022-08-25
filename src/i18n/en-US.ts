@@ -10,6 +10,9 @@ export const enUS = {
     letscollab: {
       desc: "The management platform for independent projects makes it easier for independent developers to generate revenue.",
     },
+    abyss: {
+      desc: "Pending.",
+    },
     aqua: {
       desc: "An elegant file manager developed using Flutter.",
     },

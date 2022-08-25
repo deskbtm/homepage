@@ -13,8 +13,14 @@ export const products = {
       href: "https://letscollab.deskbtm.com/",
     },
     {
+      icon: "abyss.svg",
+      name: "abyss (WIP 🚧)",
+      descId: "app.abyss.desc",
+      href: "https://abyss.deskbtm.com/",
+    },
+    {
       icon: "aqua.svg",
-      name: "Aqua (Refactor 👷🏼‍♂️)",
+      name: "Aqua (Archive 🏥)",
       descId: "app.aqua.desc",
       href: "https://github.com/deskbtm/aqua",
     },

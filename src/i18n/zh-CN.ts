@@ -10,6 +10,9 @@ export const zhCN = {
     letscollab: {
       desc: "独立项目的管理平台，让独立开发者们的营收更加轻松。",
     },
+    abyss: {
+      desc: "Pending.",
+    },
     aqua: {
       desc: "使用Flutter开发的一款优雅的文件管理器。",
     },
