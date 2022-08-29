@@ -1,6 +1,5 @@
 import "./ProjectsList.css";
 import React, { CSSProperties, FC, MouseEventHandler } from "react";
-import { Scrollbars } from "rc-scrollbars";
 import { Occupy } from "./components/Occupy";
 import { products } from "./products";
 import { useTranslation } from "react-i18next";
@@ -37,6 +36,7 @@ export const ProjectsListTile: FC<ProjectsListTileProps> = function (props) {
                   href={val.href}
                   onClick={(e) => {
                     e.preventDefault();
+                    e.stopPropagation();
                     window.open(val.href);
                   }}
                 >
@@ -58,10 +58,6 @@ export const ProjectsListTitle: FC = function (props) {
 
 export const ProjectsList: FC = function () {
   const { t } = useTranslation();
-  const { matchesAll } = useMediaQueries({
-    screen: "screen",
-    width: "(max-width: 762px)",
-  });
 
   const appList = products.app.map((item, index) => {
     return (
@@ -85,7 +81,7 @@ export const ProjectsList: FC = function () {
         title={item.name}
         subTitle={t(item.descId)}
         actions={item.actions}
-        onClick={() => {
+        onClick={(e) => {
           window.open(item.href);
         }}
       />
@@ -94,7 +90,7 @@ export const ProjectsList: FC = function () {
 
   return (
     <div className="project-container">
-      <div style={{width: 500}}>
+      <div className="prj-list">
         <ProjectsListTitle>{t("Apps")}</ProjectsListTitle>
         {appList}
         {/* {matchesAll ? (
@@ -104,7 +100,7 @@ export const ProjectsList: FC = function () {
         )} */}
       </div>
       <Occupy width={20} />
-      <div style={{width: 500}}>
+      <div className="prj-list">
         <ProjectsListTitle>{t("OpenSource")}</ProjectsListTitle>
         {openSourceList}
         {/* {matchesAll ? (

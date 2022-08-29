@@ -33,8 +33,8 @@ export const products = {
       icon: "monorepo.png",
       actions: [
         {
-          title: "Coming Soon",
-          href: "#",
+          title: "Marketplace",
+          href: "https://marketplace.visualstudio.com/items?itemName=deskbtm.colorful-monorepo",
         },
       ],
     },

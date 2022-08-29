@@ -44,8 +44,8 @@ const App = function () {
             await i18n.changeLanguage(lng);
           }}
         >
-          <option value="zh-CN">English</option>
-          <option value="en">简体中文</option>
+          <option value="en">English</option>
+          <option value="zh-CN">简体中文</option>
         </select>
       </div>
       <Occupy height={30} />

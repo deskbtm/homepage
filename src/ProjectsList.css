@@ -48,8 +48,16 @@
   display: flex;
 }
 
+.project-container .prj-list {
+  width: 500px;
+}
+
 @media screen and (max-width: 762px) {
   .project-container {
     display: unset;
+  }
+
+  .project-container .prj-list {
+    width: unset;
   }
 }
