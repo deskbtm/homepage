@@ -13,6 +13,9 @@ export const zhCN = {
     abyss: {
       desc: "Pending.",
     },
+    vs_droid: {
+      desc: "Visual Studio Code for Android",
+    },
     aqua: {
       desc: "使用Flutter开发的一款优雅的文件管理器。",
     },

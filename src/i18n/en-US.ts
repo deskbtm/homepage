@@ -13,6 +13,9 @@ export const enUS = {
     abyss: {
       desc: "Pending.",
     },
+    vs_droid: {
+      desc: "Visual Studio Code for Android",
+    },
     aqua: {
       desc: "An elegant file manager developed using Flutter.",
     },

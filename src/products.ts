@@ -14,9 +14,15 @@ export const products = {
     },
     {
       icon: "abyss.svg",
-      name: "abyss (WIP 🚧)",
+      name: "Abyss (WIP 🚧)",
       descId: "app.abyss.desc",
       href: "https://abyss.deskbtm.com/",
+    },
+    {
+      icon: "vs_droid.png",
+      name: "VS Droid (WIP 🚧)",
+      descId: "app.vs_droid.desc",
+      href: "https://github.com/deskbtm-vsdroid",
     },
     {
       icon: "aqua.svg",
