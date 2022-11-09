@@ -16,7 +16,11 @@ export const Footer: FC = function () {
       </div>
       <Occupy height={20} />
       <div className="content-enter">
-        Copyright© {new Date().getFullYear()} WangHan(Nawbc)
+        Copyright© {new Date().getFullYear()} Han(
+        <a href="https://github.com/Nawbc" target="_blank_">
+          Nawbc
+        </a>
+        )
       </div>
     </footer>
   );
