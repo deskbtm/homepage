@@ -3,7 +3,6 @@ import React, { CSSProperties, FC, MouseEventHandler } from "react";
 import { Occupy } from "./components/Occupy";
 import { products } from "./products";
 import { useTranslation } from "react-i18next";
-import { useMediaQueries } from "@react-hook/media-query";
 
 interface ProjectsListTileProps {
   leading?: string;
