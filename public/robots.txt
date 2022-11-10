@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://deskbtm.com
+
+# Sitemaps
+Sitemap: https://deskbtm.com/sitemap.xml

@@ -2,11 +2,15 @@
   "name": "deskbtm-home",
   "version": "0.1.0",
   "private": true,
+  "description": "deskbtm.com home site",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap",
+    "static": "next build && next export",
+    "deploy": "node ./deploy"
   },
   "dependencies": {
     "@types/node": "18.11.9",
@@ -14,9 +18,17 @@
     "@types/react-dom": "18.0.8",
     "eslint": "8.27.0",
     "eslint-config-next": "13.0.2",
+    "i18next": "^22.0.4",
     "next": "13.0.2",
+    "next-i18next": "^12.1.0",
+    "next-language-detector": "^1.0.2",
+    "next-sitemap": "^3.1.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.8.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "ora": "5.4.0"
   }
 }
