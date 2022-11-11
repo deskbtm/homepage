@@ -44,10 +44,10 @@ async function buildHomepage() {
   await buildHomepage();
   spinner.stop();
   spinner.clear();
-  console.log("build Success");
+  console.log("Building successfully");
   spinner.start("deploying homepage...");
   await publish().catch((err) => console.error("Error:", err));
   spinner.stop();
   spinner.clear();
-  console.log("deploy Success");
+  console.log("Deploying successfully");
 })();

@@ -1,8 +1,8 @@
-import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { appWithTranslation } from "next-i18next";
 import Head from "next/head";
 import Script from "next/script";
+import "../styles/globals.css";
 
 function App({ Component, pageProps }: AppProps) {
   return (
@@ -26,9 +26,9 @@ function App({ Component, pageProps }: AppProps) {
         {`window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());
-
             gtag('config', 'G-NTH8X8YFX4');`}
       </Script>
+
       <Component {...pageProps} />
     </>
   );

@@ -1,11 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  images: {
+    unoptimized: true,
+  },
   reactStrictMode: true,
   swcMinify: true,
-  exportPathMap: async (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) => {
+  trailingSlash: true,
+  exportPathMap: async () => {
     return {
       "/": { page: "/" },
     };

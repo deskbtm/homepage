@@ -8,35 +8,36 @@ import { Occupy } from "../../components/Occupy";
 import { useTranslation } from "next-i18next";
 import { getStaticPaths, makeStaticProps } from "../../lib/getStatic";
 import languageDetector from "../../lib/languageDetector";
+import Image from "next/image";
 
 const products = {
   app: [
     {
-      icon: "nawb.png",
+      icon: "/nawb.png",
       name: "Nawb (WIP 🚧)",
       descId: "app.nawb.desc",
       href: "https://nawb.deskbtm.com/",
     },
     {
-      icon: "letscollab.svg",
+      icon: "/letscollab.svg",
       name: "letscollab (WIP 🚧)",
       descId: "app.letscollab.desc",
       href: "https://letscollab.deskbtm.com/",
     },
     {
-      icon: "abyss.svg",
+      icon: "/abyss.svg",
       name: "Abyss (WIP 🚧)",
       descId: "app.abyss.desc",
       href: "https://abyss.deskbtm.com/",
     },
     {
-      icon: "vs_droid.png",
+      icon: "/vs_droid.png",
       name: "VS Droid (WIP 🚧)",
       descId: "app.vs_droid.desc",
       href: "https://github.com/deskbtm-vsdroid",
     },
     {
-      icon: "aqua.svg",
+      icon: "/aqua.svg",
       name: "Aqua (Archive 🏥)",
       descId: "app.aqua.desc",
       href: "https://github.com/deskbtm/aqua",
@@ -47,10 +48,10 @@ const products = {
       name: "Android adb wlan",
       descId: "openSource.androidADBWLAN.desc",
       href: "https://marketplace.visualstudio.com/items?itemName=HanWang.android-adb-wlan",
-      icon: "android.png",
+      icon: "/android.png",
       actions: [
         {
-          title: "Repo",
+          title: "repository",
           href: "https://github.com/deskbtm/android-adb-wlan",
         },
       ],
@@ -59,10 +60,10 @@ const products = {
       name: "Colorful Monorepo",
       descId: "openSource.colorfulMonorepo.desc",
       href: "https://marketplace.visualstudio.com/items?itemName=deskbtm.colorful-monorepo",
-      icon: "monorepo.png",
+      icon: "/monorepo.png",
       actions: [
         {
-          title: "Repo",
+          title: "repository",
           href: "https://github.com/deskbtm/colorful-monorepo",
         },
       ],
@@ -98,7 +99,7 @@ export const ProjectsListTile: FC<ProjectsListTileProps> = function (props) {
     >
       {props.leading && (
         <div className="listTile-leading">
-          <img src={props.leading} />
+          <Image width={50} height={50} src={props.leading} alt={""} />
         </div>
       )}
       <div className="listTile-wrapper">
@@ -182,21 +183,18 @@ const Footer: FC = function () {
   return (
     <footer className="app-footer">
       <div className="content-enter align-enter">
-        <a href="https://github.com/deskbtm" target="_blank_">
+        <a href="https://github.com/deskbtm">
           <i className="header-github-link"></i>
         </a>
         <Occupy width={20} />
-        <a href="https://www.zhihu.com/people/mrno-64" target="_blank_">
+        <a href="https://www.zhihu.com/people/mrno-64">
           <i className="zhi-hu-link"></i>
         </a>
       </div>
       <Occupy height={20} />
       <div className="content-enter">
         Copyright© {new Date().getFullYear()} Han(
-        <a href="https://github.com/Nawbc" target="_blank_">
-          Nawbc
-        </a>
-        )
+        <a href="https://github.com/Nawbc">Nawbc</a>)
       </div>
     </footer>
   );
@@ -205,19 +203,16 @@ const Footer: FC = function () {
 export default function Home() {
   const { t, i18n } = useTranslation("common");
 
-  console.log(t("No inspiration is spared."));
+  const switchLng = (e: any) => {
+    const lng = e.target.value;
+    languageDetector.cache?.(lng);
+    location.href = "/";
+  };
 
   return (
     <div className="app">
       <div className="navbar">
-        <select
-          defaultValue={i18n.language}
-          onChange={async (e) => {
-            const lng = e.target.value;
-            languageDetector.cache?.(lng);
-            location.href = "/";
-          }}
-        >
+        <select defaultValue={i18n.language} onChange={switchLng}>
           <option value="en">English</option>
           <option value="zh">简体中文</option>
         </select>
@@ -225,7 +220,7 @@ export default function Home() {
       <Occupy height={30} />
       <header>
         <div className="app-logo">
-          <img src="logo.svg" alt="logo" />
+          <Image width={180} height={180} src="/logo.svg" alt="logo" />
         </div>
         <div className="slogan">{t("No inspiration is spared.")}</div>
         <p className="sub-slogan">{t("An amateur indie studio")}</p>
@@ -242,4 +237,5 @@ export default function Home() {
 }
 
 const getStaticProps = makeStaticProps(["common"]);
+
 export { getStaticPaths, getStaticProps };
