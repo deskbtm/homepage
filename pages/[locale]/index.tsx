@@ -220,7 +220,7 @@ export default function Home() {
       <Occupy height={30} />
       <header>
         <div className="app-logo">
-          <Image width={180} height={180} src="/logo.svg" alt="logo" />
+          <Image width={180} height={180} src="/logo.png" alt="logo" />
         </div>
         <div className="slogan">{t("No inspiration is spared.")}</div>
         <p className="sub-slogan">{t("An amateur indie studio")}</p>

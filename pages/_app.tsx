@@ -2,13 +2,14 @@ import type { AppProps } from "next/app";
 import { appWithTranslation } from "next-i18next";
 import Head from "next/head";
 import Script from "next/script";
+//TODO: refactor, migrate from vite
 import "../styles/globals.css";
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+        <link rel="icon" type="image/png" href="/logo.png" />
         <meta
           name="keywords"
           content="deskbtm,nawb,aqua,letscollab,win32ffi, indie studio,个人工作室,javascript,app,application,developer,software,软件,独立开发者,vs droid"
