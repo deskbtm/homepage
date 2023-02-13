@@ -14,38 +14,38 @@ const products = {
   app: [
     {
       icon: "/nawb.png",
-      name: "Nawb (WIP 🚧)",
+      name: "Nawb (WIP)",
       descId: "app.nawb.desc",
       href: "https://nawb.deskbtm.com/",
     },
     {
       icon: "/letscollab.svg",
-      name: "letscollab (WIP 🚧)",
+      name: "letscollab (WIP)",
       descId: "app.letscollab.desc",
       href: "https://letscollab.deskbtm.com/",
     },
     {
       icon: "/abyss.svg",
-      name: "Abyss (WIP 🚧)",
+      name: "Abyss (WIP)",
       descId: "app.abyss.desc",
       href: "https://abyss.deskbtm.com/",
     },
     {
       icon: "/vs_droid.png",
-      name: "VS Droid (WIP 🚧)",
+      name: "VS Droid (WIP)",
       descId: "app.vs_droid.desc",
       href: "https://github.com/deskbtm-vsdroid",
     },
     {
       icon: "/aqua.svg",
-      name: "Aqua (Archive 🏥)",
+      name: "Aqua (Archive)",
       descId: "app.aqua.desc",
       href: "https://github.com/deskbtm/aqua",
     },
   ],
   openSource: [
     {
-      name: "Android adb wlan",
+      name: "Android ADB WLAN",
       descId: "openSource.androidADBWLAN.desc",
       href: "https://marketplace.visualstudio.com/items?itemName=HanWang.android-adb-wlan",
       icon: "/android.png",

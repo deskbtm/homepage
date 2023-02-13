@@ -5,10 +5,10 @@
   "OSS": "开源软件",
   "app": {
     "nawb": {
-      "desc": "另一个连接世界的入口。"
+      "desc": "另一个连接世界的入口."
     },
     "letscollab": {
-      "desc": "独立项目的管理平台，让独立开发者们的营收更加轻松。"
+      "desc": "一个专门为独立开发者设计的自部署平台.提供利益项目的财务服务和BaaS."
     },
     "abyss": {
       "desc": "Pending."
@@ -17,21 +17,21 @@
       "desc": "Visual Studio Code for Android"
     },
     "aqua": {
-      "desc": "使用Flutter开发的一款优雅的文件管理器。"
+      "desc": "优雅简洁的安卓文件管理器."
     }
   },
   "openSource": {
     "colorfulMonorepo": {
-      "desc": "vscode 插件，让Monorepo项目的工作台更加高效，清爽。"
+      "desc": "vscode插件，高效，清爽的管理monorepo项目."
     },
     "androidADBWLAN": {
-      "desc": "vscode插件, 安卓无线调试, 支持多台设备。"
+      "desc": "vscode插件, 安卓无线调试, 支持多个多台设备."
     },
     "win32ffi": {
-      "desc": "使用ffi实现javascript对win32 api的绑定。"
+      "desc": "让你能够使用Javascript调用win32 api."
     },
     "lonely": {
-      "desc": "独立开发者的软件管理工具 支付无需签约，高效管理用户。"
+      "desc": "独立开发者的软件管理工具，支付无需签约，高效管理用户."
     }
   }
 }
