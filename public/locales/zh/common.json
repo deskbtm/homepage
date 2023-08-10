@@ -22,13 +22,13 @@
   },
   "openSource": {
     "colorfulMonorepo": {
-      "desc": "vscode插件，高效，清爽的管理monorepo项目."
+      "desc": "VSCode插件, 高效, 清爽的管理monorepo项目."
     },
     "androidADBWLAN": {
-      "desc": "vscode插件, 安卓无线调试, 支持多个多台设备."
+      "desc": "VSCode插件, 安卓无线调试, 支持多个多台设备."
     },
     "win32ffi": {
-      "desc": "让你能够使用Javascript调用win32 api."
+      "desc": "Win32 API NodeJs binding."
     },
     "lonely": {
       "desc": "独立开发者的软件管理工具，支付无需签约，高效管理用户."
