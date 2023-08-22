@@ -27,6 +27,7 @@ export const Redirect = () => {
   return <></>;
 };
 
+// eslint-disable-next-line react/display-name
 export const getRedirect = (to?: string) => () => {
   useRedirect(to);
   return <></>;

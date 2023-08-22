@@ -29,7 +29,7 @@ async function publish() {
 
 async function buildHomepage() {
   await new Promise((resolve, reject) => {
-    exec("npm run static", (error) => {
+    exec("yarn static", (error) => {
       if (error) {
         reject(error);
       } else {

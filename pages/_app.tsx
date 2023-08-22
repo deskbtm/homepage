@@ -23,7 +23,7 @@ function App({ Component, pageProps }: AppProps) {
         <title>Deskbtm | 个人工作室</title>
       </Head>
       <Script src="/gtag.js" async strategy="afterInteractive"></Script>
-      <Script>
+      <Script id="google-ads">
         {`window.dataLayer = window.dataLayer || [];
             function gtag() { dataLayer.push(arguments); }
             gtag('js', new Date());

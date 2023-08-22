@@ -99,7 +99,7 @@ export const ProjectsListTile: FC<ProjectsListTileProps> = function (props) {
     >
       {props.leading && (
         <div className="listTile-leading">
-          <Image width={50} height={50} src={props.leading} alt={""} />
+          <Image width={45} height={45} src={props.leading} alt={""} />
         </div>
       )}
       <div className="listTile-wrapper">
