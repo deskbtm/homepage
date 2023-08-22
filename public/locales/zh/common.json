@@ -1,37 +1,37 @@
 {
-  "No inspiration is spared.": "不放过任何灵感",
+  "No inspiration is spared": "不放过任何灵感",
   "An amateur indie studio": "一个业余软件工作室",
   "Apps": "应用产品",
   "OSS": "开源软件",
   "app": {
     "nawb": {
-      "desc": "另一个连接世界的入口."
+      "desc": "另一个连接世界的入口"
     },
-    "letscollab": {
-      "desc": "一个专门为独立开发者和开源开发者设计的自部署平台，提供项目的财务服务和BaaS."
+    "indiebase": {
+      "desc": "一个专门为独立开发者和团队设计的自部署平台, 提供项目的BaaS和财政服务"
     },
-    "abyss": {
-      "desc": "Pending."
+    "plugkit": {
+      "desc": "Pending"
     },
     "vs_droid": {
       "desc": "Visual Studio Code for Android"
     },
     "aqua": {
-      "desc": "优雅简洁的安卓文件管理器."
+      "desc": "优雅简洁的安卓文件管理器"
     }
   },
   "openSource": {
     "colorfulMonorepo": {
-      "desc": "VSCode插件, 高效, 清爽的管理monorepo项目."
+      "desc": "VSCode插件, 高效, 清爽的管理monorepo项目"
     },
     "androidADBWLAN": {
-      "desc": "VSCode插件, 安卓无线调试, 支持多个多台设备."
+      "desc": "VSCode插件, 安卓无线调试, 支持多个多台设备"
     },
     "win32ffi": {
-      "desc": "Win32 API NodeJs binding."
+      "desc": "Win32 API NodeJs binding"
     },
     "lonely": {
-      "desc": "独立开发者的软件管理工具，支付无需签约，高效管理用户."
+      "desc": "独立开发者的软件管理工具，支付无需签约，高效管理用户"
     }
   }
 }

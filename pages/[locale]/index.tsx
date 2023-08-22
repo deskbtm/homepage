@@ -19,16 +19,16 @@ const products = {
       href: "https://nawb.deskbtm.com/",
     },
     {
-      icon: "/letscollab.svg",
-      name: "letscollab (WIP)",
-      descId: "app.letscollab.desc",
+      icon: "/indiebase.svg",
+      name: "Indiebase (WIP)",
+      descId: "app.indiebase.desc",
       href: "https://letscollab.deskbtm.com/",
     },
     {
-      icon: "/abyss.svg",
-      name: "Abyss (WIP)",
-      descId: "app.abyss.desc",
-      href: "https://abyss.deskbtm.com/",
+      icon: "/plugkit.svg",
+      name: "PlugKit (WIP)",
+      descId: "app.plugkit.desc",
+      href: "https://plugkit.deskbtm.com/",
     },
     {
       icon: "/vs_droid.png",

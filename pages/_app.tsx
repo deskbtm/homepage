@@ -12,7 +12,7 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="icon" type="image/png" href="/logo.png" />
         <meta
           name="keywords"
-          content="deskbtm,nawb,aqua,letscollab,win32ffi, indie studio,个人工作室,javascript,app,application,developer,software,软件,独立开发者,vs droid"
+          content="deskbtm,nawb,aqua,indiebase,win32ffi,indie studio,个人工作室,javascript,app,application,developer,software,软件,独立开发者,vs droid"
         />
         <meta name="description" content="一个业余软件工作室" />
         <meta name="robots" content="index,follow" />

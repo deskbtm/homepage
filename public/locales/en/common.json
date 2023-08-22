@@ -7,10 +7,10 @@
     "nawb": {
       "desc": "Another portal to connect the world."
     },
-    "letscollab": {
-      "desc": "A self-hosting platform explicitly designed for indie developers and open-source developers. Provides financial services, BaaS."
+    "indiebase": {
+      "desc": "A self-hosted platform explicitly designed for indie developers or teams. Providing BaaS and financial services."
     },
-    "abyss": {
+    "plugkit": {
       "desc": "Pending."
     },
     "vs_droid": {
