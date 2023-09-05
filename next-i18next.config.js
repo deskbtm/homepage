@@ -7,4 +7,10 @@ module.exports = {
     defaultLocale: "en",
     locales: ["en", "zh"],
   },
+  react: {
+    useSuspense: true,
+  },
+  interpolation: {
+    escapeValue: false,
+  },
 };
