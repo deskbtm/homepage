@@ -13,22 +13,22 @@ import Image from "next/image";
 const products = {
   app: [
     {
-      icon: "/nawb.png",
-      name: "Nawb (WIP)",
-      descId: "app.nawb.desc",
-      href: "https://nawb.deskbtm.com/",
-    },
-    {
       icon: "/indiebase.svg",
       name: "Indiebase (WIP)",
       descId: "app.indiebase.desc",
-      href: "https://letscollab.deskbtm.com/",
+      href: "https://indiebase.deskbtm.com/",
     },
     {
       icon: "/plugkit.svg",
       name: "PlugKit (WIP)",
       descId: "app.plugkit.desc",
       href: "https://plugkit.deskbtm.com/",
+    },
+    {
+      icon: "/nawb.png",
+      name: "Nawb (WIP)",
+      descId: "app.nawb.desc",
+      href: "https://nawb.deskbtm.com/",
     },
     {
       icon: "/vs_droid.png",

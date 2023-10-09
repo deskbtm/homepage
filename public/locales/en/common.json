@@ -4,14 +4,14 @@
   "Apps": "Apps",
   "OSS": "OSS",
   "app": {
-    "nawb": {
-      "desc": "Another portal to connect the world."
-    },
     "indiebase": {
       "desc": "A self-hosted platform explicitly designed for indie developers or teams. Providing BaaS and financial services."
     },
     "plugkit": {
       "desc": "Pending."
+    },
+    "nawb": {
+      "desc": "Another portal to connect the world."
     },
     "vs_droid": {
       "desc": "Visual Studio Code for Android"

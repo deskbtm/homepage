@@ -4,14 +4,14 @@
   "Apps": "应用产品",
   "OSS": "开源软件",
   "app": {
-    "nawb": {
-      "desc": "另一个连接世界的入口"
-    },
     "indiebase": {
       "desc": "一个专门为独立开发者和团队设计的自部署平台, 提供项目的BaaS和财政服务"
     },
     "plugkit": {
       "desc": "Pending"
+    },
+    "nawb": {
+      "desc": "另一个连接世界的入口"
     },
     "vs_droid": {
       "desc": "Visual Studio Code for Android"

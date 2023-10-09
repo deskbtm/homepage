@@ -20,7 +20,7 @@ function App({ Component, pageProps }: AppProps) {
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <title>Deskbtm | 个人工作室</title>
+        <title>Deskbtm | An indie hacker studio</title>
       </Head>
       <Script src="/gtag.js" async strategy="afterInteractive"></Script>
       <Script id="google-ads">
