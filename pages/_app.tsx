@@ -14,13 +14,13 @@ function App({ Component, pageProps }: AppProps) {
           name="keywords"
           content="deskbtm,nawb,aqua,indiebase,win32ffi,indie studio,个人工作室,javascript,app,application,developer,software,软件,独立开发者,vs droid"
         />
-        <meta name="description" content="一个业余软件工作室" />
+        <meta name="description" content="I'm an indie hacker" />
         <meta name="robots" content="index,follow" />
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
-        <title>Deskbtm | An indie hacker studio</title>
+        <title>Deskbtm | I&apos;m an indie hacker</title>
       </Head>
       <Script src="/gtag.js" async strategy="afterInteractive"></Script>
       <Script id="google-ads">
