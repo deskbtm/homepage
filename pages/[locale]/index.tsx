@@ -34,7 +34,7 @@ const products = {
       icon: "/vs_droid.png",
       name: "VS Droid (WIP)",
       descId: "app.vs_droid.desc",
-      href: "https://github.com/deskbtm-vsdroid",
+      href: "https://github.com/nawbc/vs_droid",
     },
     {
       icon: "/aqua.svg",
