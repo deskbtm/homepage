@@ -183,12 +183,25 @@ const Footer: FC = function () {
   return (
     <footer className="app-footer">
       <div className="content-enter align-enter">
-        <a href="https://github.com/deskbtm">
+        <a href="https://github.com/deskbtm" target="_blank" rel="noreferrer">
           <i className="header-github-link"></i>
         </a>
         <Occupy width={20} />
-        <a href="https://www.zhihu.com/people/mrno-64">
+        <a
+          href="https://www.zhihu.com/people/mrno-64"
+          target="_blank"
+          rel="noreferrer"
+        >
           <i className="zhi-hu-link"></i>
+        </a>
+        <Occupy width={20} />
+        <a
+          href="https://twitter.com/intent/follow?screen_name=deskbtm"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {/* <img src="/x.vg" alt="X" /> */}
+          <Image src="/x.svg" alt="X" width={100} height={20} />
         </a>
       </div>
       <Occupy height={20} />
