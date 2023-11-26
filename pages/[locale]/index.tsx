@@ -200,8 +200,7 @@ const Footer: FC = function () {
           target="_blank"
           rel="noreferrer"
         >
-          {/* <img src="/x.vg" alt="X" /> */}
-          <Image src="/x.svg" alt="X" width={100} height={20} />
+          <i className="x-link"></i>
         </a>
       </div>
       <Occupy height={20} />
