@@ -769,6 +769,7 @@ __metadata:
     next: 13.0.2
     next-i18next: ^12.1.0
     next-language-detector: ^1.0.2
+    next-meta: ^0.1.9
     next-sitemap: ^3.1.30
     ora: 5.4.0
     react: 18.2.0
@@ -2044,6 +2045,17 @@ __metadata:
     "@babel/runtime": 7.16.7
     i18next-browser-languagedetector: 6.1.2
   checksum: 92da5dc9680c6ea05e94eb0306cc7f6a311ed86f6638bd2b64903267c304bd7f3f49cc41c4f492cbbb30391a30bcfbf8c70025829a41f8b2faf013884897ffba
+  languageName: node
+  linkType: hard
+
+"next-meta@npm:^0.1.9":
+  version: 0.1.9
+  resolution: "next-meta@npm:0.1.9"
+  peerDependencies:
+    next: ">=10.0.0"
+    react: ">=16.8"
+    react-dom: ">=16.8"
+  checksum: fda57a26f674e17da5dd9479e95471650db881257065fdbf889320df35abfac030f6804ff24a49a1b04d29f61b39e5d37ffcc15ebfc49e58e1aaf88cd47931ed
   languageName: node
   linkType: hard
 
