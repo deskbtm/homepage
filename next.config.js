@@ -6,6 +6,9 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   trailingSlash: true,
+  experimental: {
+    esmExternals: false,
+  },
   exportPathMap: async () => {
     return {
       "/": { page: "/" },
