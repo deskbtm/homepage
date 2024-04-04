@@ -99,7 +99,7 @@ export const ProjectsListTile: FC<ProjectsListTileProps> = function (props) {
     >
       {props.leading && (
         <div className="listTile-leading">
-          <Image width={45} height={45} src={props.leading} alt={""} />
+          <Image width={45} height={45} src={props.leading} alt={props.title!} />
         </div>
       )}
       <div className="listTile-wrapper">
@@ -232,7 +232,7 @@ export default function Home() {
       <Occupy height={30} />
       <header>
         <div className="app-logo">
-          <Image width={180} height={180} src="/logo.png" alt="logo" />
+          <Image width={180} height={180} src="/logo.svg" alt="deskbtm" />
         </div>
         <div className="slogan">{t("No inspiration is spared")}</div>
         <p className="sub-slogan">{t("An amateur indie studio")}</p>

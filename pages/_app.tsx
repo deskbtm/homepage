@@ -19,7 +19,7 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <link rel="icon" type="image/png" href="/logo.png" />
+        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
         <meta content="text/html; charset=UTF-8" name="Content-Type" />
         <meta name="keywords" content={DEFAULT_KEYWORDS} />
         <meta name="robots" content="index,follow" />
